@@ -6,7 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -isystem /opt/homebrew/include -isystem /opt/homebrew/opt/openssl/include -isystem /opt/miniconda3/include
 
-CXX_FLAGSarm64 = -std=gnu++20 -arch arm64 -Wall -Wextra -O2
-
-CXX_FLAGS = -std=gnu++20 -arch arm64 -Wall -Wextra -O2
+CXX_FLAGS = -std=gnu++20 -Wall -Wextra -O2
 

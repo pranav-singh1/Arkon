@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/kalshi_feed.dir/src/kalshi_feed.cpp.o -o kalshi_feed  /opt/homebrew/opt/openssl/lib/libssl.dylib /opt/homebrew/opt/openssl/lib/libcrypto.dylib
+/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/kalshi_feed.dir/src/kalshi_feed.cpp.o -o kalshi_feed  /opt/homebrew/opt/openssl/lib/libssl.dylib /opt/homebrew/opt/openssl/lib/libcrypto.dylib

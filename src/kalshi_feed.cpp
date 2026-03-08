@@ -5,6 +5,7 @@
 #include <boost/beast/websocket.hpp>
 #include <boost/beast/websocket/ssl.hpp>
 #include <nlohmann/json.hpp>
+#include "writer.hpp"
 
 #include <openssl/evp.h>
 #include <openssl/pem.h>
@@ -84,6 +85,7 @@ static EVP_PKEY* load_private_key(const char* path)
 
 int main()
 {
+    TickWriter writer("ticks.jsonl");
     const char* api_key = std::getenv("KALSHI_API_KEY");
     if (!api_key) {
         std::cerr << "KALSHI_API_KEY not set\n";
@@ -150,11 +152,14 @@ int main()
     // --- Read loop ---
     beast::flat_buffer buffer;
     while (true) {
+
         buffer.clear();
         ws.read(buffer);
         std::string msg = beast::buffers_to_string(buffer.data());
         json parsed = json::parse(msg);
+        writer.write(parsed);
         std::cout << parsed.dump(2) << "\n";
+        
     }
 
     return 0;
