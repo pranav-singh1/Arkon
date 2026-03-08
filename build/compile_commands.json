@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/pranavsingh/arkon/build",
+  "command": "/usr/bin/c++  -isystem /opt/homebrew/include -isystem /opt/homebrew/opt/openssl/include -isystem /opt/miniconda3/include -std=gnu++20 -arch arm64 -Wall -Wextra -O2 -o CMakeFiles/kalshi_feed.dir/src/kalshi_feed.cpp.o -c /Users/pranavsingh/arkon/src/kalshi_feed.cpp",
+  "file": "/Users/pranavsingh/arkon/src/kalshi_feed.cpp",
+  "output": "CMakeFiles/kalshi_feed.dir/src/kalshi_feed.cpp.o"
+}
+]
