@@ -926,6 +926,7 @@ CMakeFiles/kalshi_feed.dir/src/kalshi_feed.cpp.o: /Users/pranavsingh/arkon/src/k
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
@@ -1178,6 +1179,7 @@ CMakeFiles/kalshi_feed.dir/src/kalshi_feed.cpp.o: /Users/pranavsingh/arkon/src/k
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Users/pranavsingh/arkon/src/writer.hpp \
   /opt/homebrew/include/boost/asio.hpp \
   /opt/homebrew/include/boost/asio/any_completion_executor.hpp \
   /opt/homebrew/include/boost/asio/any_completion_handler.hpp \
@@ -3375,6 +3377,8 @@ CMakeFiles/kalshi_feed.dir/src/kalshi_feed.cpp.o: /Users/pranavsingh/arkon/src/k
 
 /opt/homebrew/include/boost/asio/stream_file.hpp:
 
+/opt/homebrew/include/boost/asio/steady_timer.hpp:
+
 /opt/homebrew/include/boost/beast/websocket/impl/close.hpp:
 
 /opt/homebrew/include/boost/asio/ssl/verify_mode.hpp:
@@ -4429,6 +4433,12 @@ CMakeFiles/kalshi_feed.dir/src/kalshi_feed.cpp.o: /Users/pranavsingh/arkon/src/k
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/net/net_kev.h:
 
+/opt/homebrew/include/boost/type_traits/is_rvalue_reference.hpp:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_final.h:
+
+/Users/pranavsingh/arkon/src/writer.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/arm/_structs.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/net/if_var.h:
@@ -4597,6 +4607,12 @@ CMakeFiles/kalshi_feed.dir/src/kalshi_feed.cpp.o: /Users/pranavsingh/arkon/src/k
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list:
 
+/opt/homebrew/include/boost/asio/detail/socket_option.hpp:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/bounded_iter.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/fdim.h:
@@ -4712,8 +4728,6 @@ CMakeFiles/kalshi_feed.dir/src/kalshi_feed.cpp.o: /Users/pranavsingh/arkon/src/k
 /opt/homebrew/include/boost/asio/detail/completion_message.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/empty.h:
-
-/opt/homebrew/include/boost/asio/steady_timer.hpp:
 
 /opt/homebrew/include/boost/asio/execution/blocking.hpp:
 
@@ -5533,10 +5547,6 @@ CMakeFiles/kalshi_feed.dir/src/kalshi_feed.cpp.o: /Users/pranavsingh/arkon/src/k
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_replace_copy_if.h:
 
-/opt/homebrew/include/boost/type_traits/is_rvalue_reference.hpp:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_final.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/pad_and_output.h:
 
 /opt/homebrew/include/boost/asio/ip/address_v6.hpp:
@@ -5710,10 +5720,6 @@ CMakeFiles/kalshi_feed.dir/src/kalshi_feed.cpp.o: /Users/pranavsingh/arkon/src/k
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h:
-
-/opt/homebrew/include/boost/asio/detail/socket_option.hpp:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/bounded_iter.h:
 
 /opt/homebrew/include/boost/asio/ip/v6_only.hpp:
 

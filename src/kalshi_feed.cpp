@@ -125,6 +125,12 @@ int main()
     tcp::resolver resolver(ioc);
     auto endpoints = resolver.resolve(KALSHI_HOST, KALSHI_PORT);
     asio::connect(beast::get_lowest_layer(ws), endpoints);
+    // After asio::connect, before ws.next_layer().handshake()
+    auto& sock = beast::get_lowest_layer(ws);
+    struct timeval tv;
+    tv.tv_sec = 30;   // 30 second timeout
+    tv.tv_usec = 0;
+    setsockopt(sock.native_handle(), SOL_SOCKET, SO_RCVTIMEO, &tv, sizeof(tv));
     ws.next_layer().handshake(ssl::stream_base::client);
 
     // --- WebSocket upgrade with auth headers ---
@@ -154,13 +160,23 @@ int main()
     while (true) {
 
         buffer.clear();
-        ws.read(buffer);
+
+        //also need to catch if no data arrives for 30 seconds and then handle
+        try {
+            ws.read(buffer);
+        } catch (const beast::system_error& e) {
+            std::cerr << "WebSocket read error: " << e.what() << "\n";
+            break;
+        } catch (const std::exception& e) {
+            std::cerr << "Error: " << e.what() << "\n";
+            break;          
+        }
+
+
         std::string msg = beast::buffers_to_string(buffer.data());
         json parsed = json::parse(msg);
         writer.write(parsed);
         std::cout << parsed.dump(2) << "\n";
-        
     }
-
     return 0;
 }
